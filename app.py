@@ -42,4 +42,5 @@ def predict():
     # Return prediction and prediction text as JSON response
     return jsonify({'prediction': prediction, 'prediction_text': prediction_text})
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
